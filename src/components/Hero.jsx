@@ -1,9 +1,12 @@
 // import content
 import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { content } from "../Content";
 const Hero = () => {
   const { hero } = content;
-
+  function downloadCv() {
+    toast.error("soon u will able to download")
+  }
   return (
     <section id="home" className="overflow-hidden">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
@@ -24,7 +27,9 @@ const Hero = () => {
           <h6 className="flex text justify-center">{hero.heighest_qualification}</h6>
           <br />
           <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+            <button className="btn" onClick={() => {
+                    downloadCv();
+                  }} >{hero.btnText}</button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
