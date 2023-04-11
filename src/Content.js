@@ -413,7 +413,7 @@ export const content = {
     btnText: "I'm interested",
   },
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     whtasappQr: whtasappQr,
     social_media: [

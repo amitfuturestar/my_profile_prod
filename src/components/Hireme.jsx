@@ -3,7 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 const Hireme = () => {
   const { Hireme } = content;
   function intersted() {
-    toast.success("Thanks for showing interest . kindly move to Contect Me Section")
+    toast.success("Thanks for showing interest . kindly move to Contact Me Section")
   }
   return (
     <section className="bg-bg_light_primary">
