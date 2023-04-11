@@ -1,8 +1,10 @@
 import { content } from "../Content";
-
+import toast, { Toaster } from "react-hot-toast";
 const Hireme = () => {
   const { Hireme } = content;
-
+  function intersted() {
+    toast.success("Thanks for showing interest . kindly move to Contect Me Section")
+  }
   return (
     <section className="bg-bg_light_primary">
       <div className="md:container px-5 pt-14">
@@ -33,7 +35,9 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
+            <button className="btn bg-dark_primary text-white" onClick={() => {
+                    intersted();
+                  }} >
               {Hireme.btnText}
             </button>
           </div>

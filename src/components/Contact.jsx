@@ -141,11 +141,11 @@ const Contact = () => {
                 }
                 {
                   content.modal &&
-                  <h6  className="text-white font-Poppins"
-                  onClick={() => {
+                  <a  className="text-white font-Poppins"
+                  onMouseOver={() => {
                     openModal();
                   }}
-                  >{content.text}</h6>
+                  >{content.text}</a>
                 }
                 
               </div>
