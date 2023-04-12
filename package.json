@@ -1,21 +1,22 @@
 {
   "name": "react_portfolio",
-  "homepage": "http://amitu09.github.io",
+  "homepage": "https://amitu09.github.io/myprofile/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "react-scripts build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
+     "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.6.0",
     "react-modal": "^3.16.1",
